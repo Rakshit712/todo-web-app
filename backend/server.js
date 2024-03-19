@@ -10,7 +10,7 @@ server.use(cors());
 
 
 const mongoose = require("mongoose");
-const url = "mongodb://localhost:27017/mydb";
+const url = "mongodb+srv://rakshitudp:Agrim122@mongocluster.xggpcnu.mongodb.net/mydb";
 
 mongoose.connect(url).then(()=>{console.log('connected to the database')}
 ).catch((err)=> console.log(err));
