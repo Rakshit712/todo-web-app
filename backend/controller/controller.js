@@ -24,7 +24,7 @@ async function  updateTodo(req,res){
     console.log(_id);
     console.log(req.body);
     let toDo;
-if(req.body.status){
+if(typeof req.body.status !=="undefined"){
     toDo = await toDoModel.findByIdAndUpdate(_id,{status:req.body.status})
 }
 if(req.body.task){
